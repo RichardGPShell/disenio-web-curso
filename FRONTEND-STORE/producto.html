@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Producto</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html">
+                <img class="header__logo" src="img/logo.png" alt="Logotipo">
+            </a> 
+        </header>
+
+        <nav class="navegacion">
+            <a class="navegacion__enlace" href="index.html">Tienda</a>
+            <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+        </nav>
+
+        <main class="contenedor">
+            <h1>React JS</h1>
+            <div class="camisa">
+                
+                <img src="img/3.jpg" alt="Imagen de camisa de ReactJS" class="camisa__imagen">
+                            
+                <div class="camisa__contenido">
+                    <p>Minima, autem aliquid mollitia beatae explicabo libero recusandae iusto, 
+                        esse qui quae voluptate deserunt cumque earum atque consequatur labore magnam accusamus! Vitae?
+                        Lorem. Minima, autem aliquid mollitia beatae explicabo libero recusandae iusto, 
+                        esse qui quae voluptate deserunt cumque earum atque consequatur labore magnam.
+                    </p>
+                    <form class="formulario">
+                        <select class="formulario__campo">
+                            <option class="campo__opcion--defecto" value="" disabled selected>-- Seleccionar Talla --</option>
+                            <option class="campo__opcion" value="">M</option>
+                            <option class="campo__opcion" value="">S</option>
+                            <option class="campo__opcion" value="">L</option>
+                        </select>
+                        <input type="number" class="formulario__campo" placeholder="Cantidad" min="1">
+                        <input type="submit" class="formulario__submit" value="Agregar al carrito">
+                    </form>
+                </div>
+            </div>    
+        </main>
+
+        <footer class="footer">
+            <p class="footer__texto">Front End Store - &copy; Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>
