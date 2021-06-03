@@ -81,6 +81,15 @@ img{
     background-position:center center;
 }
 
+.webp .header{
+    background-image: url(../img/banner.webp);
+}
+.no-webp .header{
+    background-image: url(../img/banner.jpg);
+}
+
+
+
 .header__texto{
     text-align: center;
     color: var(--blanco);
@@ -120,19 +129,14 @@ img{
 
 @media (min-width: 768px) {
     .navegacion{
-        display: flex;        
+        display: flex; 
+        justify-content: space-between;
         gap: 2rem;
     }
 }
 
 .navegacion__enlace {
     display: block;
-    text-align: center;
-    font-size: 1.8rem;
-    color: var(--blanco);
-}
-
-.navegacion__enlace{
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
@@ -148,7 +152,7 @@ img{
 
 .entrada{
     border-bottom: 1px solid var(--gris);
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .entrada:last-of-type{
@@ -165,14 +169,19 @@ img{
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 2rem;
+    border: none;
+}   
+
+.boton:hover{
+    cursor: pointer;
 }
+
 
 @media (min-width: 768px) {
     .boton{
         display: inline-block;
     }
 }
-
 
 
 .boton--primario{
@@ -196,12 +205,14 @@ img{
     border: none;
 }
 
-.widget-curso__label{
+.widget-curso__label,
+.curso__label{
     font-family: var(--fuenteHeading);
     font-weight: 700;
 }
 
-.widget-curso__info{
+.widget-curso__info,
+.curso__info{
     font-weight: 400;
 }
 
@@ -230,6 +241,78 @@ img{
         gap: 2rem;
     }
 }
+
+/*Curso*/
+
+.curso{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+@media (min-width: 768px) {
+    .curso{
+        
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 4rem;            
+    }    
+}
+
+/*Contacto*/
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.formulario{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    /*gap: 2rem;*/
+}
+
+.campo__label, 
+.campo__field{
+    height: 3rem;
+}
+
+.campo__field {
+    border: 1px solid var(--gris);   
+}
+
+.campo__field--textarea {
+    height: 12rem;
+}   
+
+@media(min-width: 768px) {
+    .campo{
+        flex-direction: row;
+    }
+
+    .campo__label{
+        flex: 0 0 9rem;
+        text-align: right;
+        padding-right: 2rem;        
+    }
+    
+    .campo__field {
+        flex:1;
+    }
+
+    .campo__field--textarea {
+        height: 20rem;
+    }    
+}
+
 
 /** Footer **/
 .footer{
