@@ -286,7 +286,7 @@ img{
 }
 
 .campo__field {
-    border: 1px solid var(--gris);   
+    border: 1px solid var(--gris);
 }
 
 .campo__field--textarea {
