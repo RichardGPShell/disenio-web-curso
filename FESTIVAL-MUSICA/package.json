@@ -1,0 +1,24 @@
+{
+  "name": "festival-musica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "Node",
+    "NPM"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1"
+  }
+}

@@ -53,6 +53,6 @@ h1 {
     }
 
     .entrada-blog{
-        flex: 0 0 calc(50% -1rem); /*flex-basis: ;*/
+        flex: 0 0 calc(50% - 1rem); /*flex-basis: ;*/
     }
 }
